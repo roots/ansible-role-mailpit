@@ -1,0 +1,25 @@
+---
+galaxy_info:
+  role_name: mailpit
+  author: swalkinshaw
+  description: "Mailpit for Linux"
+  company: "Roots Software Foundation LLC"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.4
+  platforms:
+    - name: EL
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+  galaxy_tags:
+    - development
+    - web
+    - system
+    - mail
+    - mailhog
+    - mailpit

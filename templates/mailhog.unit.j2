@@ -1,0 +1,12 @@
+[Unit]
+Description=Mailpit - email testing for developers
+After=syslog.target network.target
+
+[Service]
+Type=simple
+ExecStart={{ mailpit_install_dir }}/mailpit
+StandardOutput=journal
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
