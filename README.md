@@ -1,47 +1,72 @@
 # Ansible Role: Mailpit
 
-Installs [Mailpit](https://github.com/axllent/mailpit), a Go-based SMTP server and web UI/API for displaying captured emails, on RedHat or Debian-based linux systems.
+<p align="center">
+  <a href="LICENSE.md">
+    <img alt="MIT License" src="https://img.shields.io/github/license/roots/ansible-role-mailpit?color=%23525ddc&style=flat-square" />
+  </a>
 
-If you're using PHP and would like to route all PHP email into Mailpit, you will need to update the `sendmail_path` configuration option in php.ini, like so:
+  <a href="https://github.com/roots/ansible-role-mailpit/releases">
+    <img alt="Release" src="https://img.shields.io/github/release/roots/ansible-role-mailpit.svg?style=flat-square" />
+  </a>
 
-    sendmail_path = "{{ mailpit_install_dir }}/mailpit sendmail"
+  <a href="https://github.com/roots/ansible-role-mailpit/actions">
+    <img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/roots/ansible-role-mailpit/ci.yml?branch=main&style=flat-square" />
+  </a>
 
-(Replace `{{ mailpit_install_dir }}` with the actual Mailpit installation directory, which is `/opt/mailpit` by default.
+  <a href="https://twitter.com/rootswp">
+    <img alt="Follow Roots" src="https://img.shields.io/twitter/follow/rootswp.svg?style=flat-square&color=1da1f2" />
+  </a>
+</p>
+
+Installs [Mailpit](https://github.com/axllent/mailpit), an email testing tool for developers, on RedHat or Debian-based linux systems.
+Mailpit acts as both an SMTP server, and provides a web interface to view all captured emails. Mailpit is inspired by MailHog, but much, much faster.
 
 This role is based on https://github.com/geerlingguy/ansible-role-mailhog
 
+If you're using PHP and would like to route all PHP email into Mailpit, you will need to update the `sendmail_path` configuration option in php.ini, like so:
+
+```yaml
+sendmail_path = "{{ mailpit_install_dir }}/mailpit sendmail"
+```
+
 ## Requirements
 
-* systemd
+A Debian-based (eg: Ubuntu) or RedHat system running systemd.
 
 ## Role Variables
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-    mailpit_install_dir: /opt/mailpit
+```yaml
+mailpit_install_dir: /opt/mailpit
+```
 
 The directory into which the MailHog binary will be installed.
 
-    mailpit_version: 1.0.0
+```yaml
+mailpit_version: 1.3.8
+```
 
 The version of Mailpit that will be installed. You can find the latest version by visiting the [Mailpit project releases page](https://github.com/axllent/mailpit/releases).
 
-    mailpit_release_url: "https://github.com/axllent/mailpit/releases/download/v{{ mailpit_version }}/mailhog-linux-amd64"
-
-The Mailpit binary that will be installed. You can find the latest version by visiting the [MailHog project releases page](https://github.com/mailpit/MailHog/releases).
-
-    mailpit_daemonize_bin_path: /usr/sbin/daemonize
-
-The path to `daemonize`, which is used to launch MailHog via init script.
-
-    mhsendmail_version: 0.2.0
-
-## Dependencies
-
-  - geerlingguy.daemonize
+```yaml
+mailpit_release_url: "https://github.com/axllent/mailpit/releases/download/v{{ mailpit_version }}/mailhog-linux-amd64"
+```
 
 ## Example Playbook
 
-    - hosts: servers
-      roles:
-        - { role: roots.mailpit }
+```yaml
+- hosts: servers
+  roles:
+    - { role: roots.mailpit }
+```
+
+## Community
+
+Keep track of development and community news.
+
+- Join us on Discord by [sponsoring us on GitHub](https://github.com/sponsors/roots)
+- Participate on the [Roots Discourse](https://discourse.roots.io/)
+- Follow [@rootswp on Twitter](https://twitter.com/rootswp)
+- Read and subscribe to the [Roots Blog](https://roots.io/blog/)
+- Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
