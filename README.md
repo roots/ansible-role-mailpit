@@ -1,21 +1,7 @@
 # Ansible Role: Mailpit
 
 <p align="center">
-  <a href="LICENSE.md">
-    <img alt="MIT License" src="https://img.shields.io/github/license/roots/ansible-role-mailpit?color=%23525ddc&style=flat-square" />
-  </a>
-
-  <a href="https://github.com/roots/ansible-role-mailpit/releases">
-    <img alt="Release" src="https://img.shields.io/github/release/roots/ansible-role-mailpit.svg?style=flat-square" />
-  </a>
-
-  <a href="https://github.com/roots/ansible-role-mailpit/actions">
-    <img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/roots/ansible-role-mailpit/ci.yml?branch=main&style=flat-square" />
-  </a>
-
-  <a href="https://twitter.com/rootswp">
-    <img alt="Follow Roots" src="https://img.shields.io/twitter/follow/rootswp.svg?style=flat-square&color=1da1f2" />
-  </a>
+  <a href="LICENSE.md"><img alt="MIT License" src="https://img.shields.io/github/license/roots/ansible-role-mailpit?color=%23525ddc&style=flat-square" /></a> <a href="https://github.com/roots/ansible-role-mailpit/releases"><img alt="Release" src="https://img.shields.io/github/release/roots/ansible-role-mailpit.svg?style=flat-square" /></a> <a href="https://github.com/roots/ansible-role-mailpit/actions"><img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/roots/ansible-role-mailpit/ci.yml?branch=main&style=flat-square" /></a> <a href="https://galaxy.ansible.com/roots/mailpit"><img alt="Galaxy Downloads" src="https://img.shields.io/badge/dynamic/json?color=blueviolet&label=galaxy%20downloads&query=%24.download_count&url=https%3A%2F%2Fgalaxy.ansible.com%2Fapi%2Fv1%2Froles%2F24936%2F%3Fformat%3Djson&style=flat-square" /></a> <a href="https://bsky.app/profile/roots.io"><img alt="Follow roots.io on Bluesky" src="https://img.shields.io/badge/follow-@roots.io-0085ff?logo=bluesky&style=flat-square"></a>
 </p>
 
 Installs [Mailpit](https://github.com/axllent/mailpit), an email testing tool for developers, on RedHat or Debian-based linux systems.
