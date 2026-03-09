@@ -1,8 +1,10 @@
 # Ansible Role: Mailpit
 
-<p align="center">
-  <a href="LICENSE.md"><img alt="MIT License" src="https://img.shields.io/github/license/roots/ansible-role-mailpit?color=%23525ddc&style=flat-square" /></a> <a href="https://github.com/roots/ansible-role-mailpit/releases"><img alt="Release" src="https://img.shields.io/github/release/roots/ansible-role-mailpit.svg?style=flat-square" /></a> <a href="https://github.com/roots/ansible-role-mailpit/actions"><img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/roots/ansible-role-mailpit/ci.yml?branch=main&style=flat-square" /></a> <a href="https://galaxy.ansible.com/roots/mailpit"><img alt="Galaxy Downloads" src="https://img.shields.io/badge/dynamic/json?color=blueviolet&label=galaxy%20downloads&query=%24.download_count&url=https%3A%2F%2Fgalaxy.ansible.com%2Fapi%2Fv1%2Froles%2F24936%2F%3Fformat%3Djson&style=flat-square" /></a> <a href="https://bsky.app/profile/roots.io"><img alt="Follow roots.io on Bluesky" src="https://img.shields.io/badge/follow-@roots.io-0085ff?logo=bluesky&style=flat-square"></a>
-</p>
+<a href="https://github.com/roots/ansible-role-mailpit/releases"><img alt="Release" src="https://img.shields.io/github/release/roots/ansible-role-mailpit.svg?style=flat-square" /></a>
+<a href="https://github.com/roots/ansible-role-mailpit/actions"><img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/roots/ansible-role-mailpit/ci.yml?branch=main&style=flat-square" /></a>
+<a href="https://galaxy.ansible.com/roots/mailpit"><img alt="Galaxy Downloads" src="https://img.shields.io/badge/dynamic/json?color=blueviolet&label=galaxy%20downloads&query=%24.download_count&url=https%3A%2F%2Fgalaxy.ansible.com%2Fapi%2Fv1%2Froles%2F24936%2F%3Fformat%3Djson&style=flat-square" /></a>
+<a href="https://twitter.com/rootswp"><img alt="Follow Roots" src="https://img.shields.io/badge/follow%20@rootswp-1da1f2?logo=twitter&logoColor=ffffff&message=&style=flat-square"></a>
+<a href="https://github.com/sponsors/roots"><img src="https://img.shields.io/badge/sponsor%20roots-525ddc?logo=github&style=flat-square&logoColor=ffffff&message=" alt="Sponsor Roots"></a>
 
 Installs [Mailpit](https://github.com/axllent/mailpit), an email testing tool for developers, on RedHat or Debian-based linux systems.
 Mailpit acts as both an SMTP server, and provides a web interface to view all captured emails. Mailpit is inspired by MailHog, but much, much faster.
@@ -14,6 +16,10 @@ If you're using PHP and would like to route all PHP email into Mailpit, you will
 ```yaml
 sendmail_path = "{{ mailpit_install_dir }}/mailpit sendmail"
 ```
+
+## Support us
+
+We're dedicated to pushing modern WordPress development forward through our open source projects, and we need your support to keep building. You can support our work by purchasing [Radicle](https://roots.io/radicle/), our recommended WordPress stack, or by [sponsoring us on GitHub](https://github.com/sponsors/roots). Every contribution directly helps us create better tools for the WordPress ecosystem.
 
 ## Requirements
 
@@ -52,7 +58,7 @@ mailpit_release_url: "https://github.com/axllent/mailpit/releases/download/v{{ m
 Keep track of development and community news.
 
 - Join us on Discord by [sponsoring us on GitHub](https://github.com/sponsors/roots)
-- Participate on the [Roots Discourse](https://discourse.roots.io/)
+- Join us on [Roots Discourse](https://discourse.roots.io/)
 - Follow [@rootswp on Twitter](https://twitter.com/rootswp)
-- Read and subscribe to the [Roots Blog](https://roots.io/blog/)
+- Follow the [Roots Blog](https://roots.io/blog/)
 - Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
